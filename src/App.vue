@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <ChuccButton label="New"/>
+    <ChuccIconButton><AirplayIcon/></ChuccIconButton>
   </div>
 </template>
 
 <script>
+import { AirplayIcon } from 'vue-feather-icons'
 import HelloWorld from './components/HelloWorld'
+import ChuccButton from './components/ChuccButton'
+import ChuccIconButton from './components/ChuccIconButton'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AirplayIcon,
+    HelloWorld,
+    ChuccButton,
+    ChuccIconButton
   }
 }
 </script>
