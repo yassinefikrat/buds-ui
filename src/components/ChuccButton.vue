@@ -1,5 +1,5 @@
 <template>
-  <button class="btn-chucc">
+  <button @click="click($event)">
     {{ label }}
   </button>
 </template>
@@ -11,6 +11,11 @@ export default {
     label: {
       type: String,
       required: true
+    }
+  },
+  methods: {
+    click: function(e) {
+      this.$emit('click', e)
     }
   }
 }
@@ -29,7 +34,7 @@ button {
   color: #9d8189;
   padding: 10px 40px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   box-shadow: 0 9px #9d8189;
   outline: none;
 }

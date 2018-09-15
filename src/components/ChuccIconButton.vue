@@ -1,6 +1,6 @@
 <template>
 
-  <button class="btn-chucc">
+  <button @click="click($event)">
     <slot></slot>
   </button>
 
@@ -8,7 +8,12 @@
 
 <script>
 export default {
-  name: 'ChuccIconButton'
+  name: 'ChuccIconButton',
+  methods: {
+    click: function(e) {
+      this.$emit('click', e)
+    }
+  }
 }
 </script>
 
