@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ChuccButton label="New" @click="processClickOnNew"/>
+    <ChuccButton @click="processClickOnNew">New</ChuccButton>
     <ChuccIconButton @click="processClickOnSettings"><SettingsIcon/></ChuccIconButton>
   </div>
 </template>

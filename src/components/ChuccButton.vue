@@ -1,18 +1,12 @@
 <template>
   <button @click="click($event)">
-    {{ label }}
+    <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
   name: 'ChuccButton',
-  props: {
-    label: {
-      type: String,
-      required: true
-    }
-  },
   methods: {
     click: function(e) {
       this.$emit('click', e)
