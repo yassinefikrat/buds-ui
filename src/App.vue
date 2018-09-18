@@ -2,6 +2,7 @@
   <div id="app">
     <ChuccButton @click="processClickOnNew">New</ChuccButton>
     <ChuccIconButton @click="processClickOnSettings"><SettingsIcon/></ChuccIconButton>
+    <ChuccTag @click="processClickOnIdTag">157-361</ChuccTag>
   </div>
 </template>
 
@@ -10,6 +11,7 @@ import { SettingsIcon } from 'vue-feather-icons'
 import HelloWorld from './components/HelloWorld'
 import ChuccButton from './components/ChuccButton'
 import ChuccIconButton from './components/ChuccIconButton'
+import ChuccTag from './components/ChuccTag'
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
     SettingsIcon,
     HelloWorld,
     ChuccButton,
-    ChuccIconButton
+    ChuccIconButton,
+    ChuccTag
   },
   methods: {
     processClickOnNew: function() {
@@ -25,6 +28,9 @@ export default {
     },
     processClickOnSettings: function() {
       alert('Clicked on Settings')
+    },
+    processClickOnIdTag: function() {
+      alert('Clicked on Id Tag')
     }
   }
 }
