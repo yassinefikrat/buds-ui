@@ -3,6 +3,7 @@
     <ChuccButton @click="processClickOnNew">New</ChuccButton>
     <ChuccIconButton @click="processClickOnSettings"><SettingsIcon/></ChuccIconButton>
     <ChuccTag @click="processClickOnIdTag">157-361</ChuccTag>
+    <ChuccNormalText>Normal Text</ChuccNormalText>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HelloWorld from './components/HelloWorld'
 import ChuccButton from './components/ChuccButton'
 import ChuccIconButton from './components/ChuccIconButton'
 import ChuccTag from './components/ChuccTag'
+import ChuccNormalText from './components/ChuccNormalText'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     HelloWorld,
     ChuccButton,
     ChuccIconButton,
-    ChuccTag
+    ChuccTag,
+    ChuccNormalText
   },
   methods: {
     processClickOnNew: function() {
