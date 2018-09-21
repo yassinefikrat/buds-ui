@@ -4,6 +4,7 @@
     <ChuccIconButton @click="processClickOnSettings"><SettingsIcon/></ChuccIconButton>
     <ChuccTag @click="processClickOnIdTag">157-361</ChuccTag>
     <ChuccNormalText>Normal Text</ChuccNormalText>
+    <ChuccSearchBar/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import ChuccButton from './components/ChuccButton'
 import ChuccIconButton from './components/ChuccIconButton'
 import ChuccTag from './components/ChuccTag'
 import ChuccNormalText from './components/ChuccNormalText'
+import ChuccSearchBar from './components/ChuccSearchBar'
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     ChuccButton,
     ChuccIconButton,
     ChuccTag,
-    ChuccNormalText
+    ChuccNormalText,
+    ChuccSearchBar
   },
   methods: {
     processClickOnNew: function() {
