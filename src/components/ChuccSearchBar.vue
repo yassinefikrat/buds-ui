@@ -29,6 +29,7 @@ input {
   border: none;
   border-bottom: 2px solid #9d8189;
   outline: none;
+  color: #9d8189;
 }
 
 .searchButton {
