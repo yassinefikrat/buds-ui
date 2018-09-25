@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input/>
+    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
     <div class="searchButton"><SearchIcon @click="search($event)"/></div>
   </div>
 </template>
