@@ -1,7 +1,7 @@
 <template>
   <div>
     <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <div class="searchButton"><SearchIcon @click="search($event)"/></div>
+    <SearchIcon class="searchButton" @click="search($event)"/>
   </div>
 </template>
 
@@ -25,6 +25,12 @@ export default {
   font-family: 'Hack', monospace;
 }
 
+div {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
 input {
   border: none;
   border-bottom: 2px solid #9d8189;
@@ -35,8 +41,6 @@ input {
 .searchButton {
   cursor: pointer;
   color: #9d8189;
-  padding: 10px 10px;
-  display: inline-block;
 }
 
 .searchButton:hover {
