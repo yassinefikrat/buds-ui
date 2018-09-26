@@ -4,7 +4,7 @@
     <ChuccIconButton @click="processClickOnSettings"><SettingsIcon/></ChuccIconButton>
     <ChuccTag @click="processClickOnIdTag">157-361</ChuccTag>
     <ChuccNormalText>Normal Text</ChuccNormalText>
-    <ChuccSearchBar/>
+    <ChuccSearchBar @search="processClickOnSearch"/>
   </div>
 </template>
 
@@ -37,6 +37,9 @@ export default {
     },
     processClickOnIdTag: function() {
       alert('Clicked on Id Tag')
+    },
+    processClickOnSearch: function(term) {
+      alert('Clicked on Search with term ' + term)
     }
   }
 }

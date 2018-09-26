@@ -1,28 +1,33 @@
 <template>
   <div>
-    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <SearchIcon class="searchButton" @click="search($event)"/>
+    <input type="text" v-model="searchTerm" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+    <SearchIcon class="searchButton" @click="search(searchTerm)"/>
   </div>
 </template>
 
 <script>
-import { SearchIcon } from 'vue-feather-icons'
+import { SearchIcon } from "vue-feather-icons";
 export default {
-  name: 'ChuccSearchBar',
-  components:{
+  name: "ChuccSearchBar",
+  components: {
     SearchIcon
   },
+  data: () => {
+      return {
+        searchTerm: ''
+      }
+  },
   methods: {
-    search: function(e) {
-      this.$emit('search', e)
+    search: function(st) {
+      this.$emit("search", st);
     }
   }
-}
+};
 </script>
 
 <style scoped>
 * {
-  font-family: 'Hack', monospace;
+  font-family: "Hack", monospace;
 }
 
 div {
