@@ -5,6 +5,7 @@
     <ChuccTag @click="processClickOnIdTag">157-361</ChuccTag>
     <ChuccNormalText>Normal Text</ChuccNormalText>
     <ChuccSearchBar @search="processClickOnSearch"/>
+    <ChuccTableItem title="Test connexion from a server to a DB" v-bind:tags="tags"/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import ChuccIconButton from './components/ChuccIconButton'
 import ChuccTag from './components/ChuccTag'
 import ChuccNormalText from './components/ChuccNormalText'
 import ChuccSearchBar from './components/ChuccSearchBar'
+import ChuccTableItem from './components/ChuccTableItem'
 
 export default {
   name: 'App',
@@ -26,7 +28,13 @@ export default {
     ChuccIconButton,
     ChuccTag,
     ChuccNormalText,
-    ChuccSearchBar
+    ChuccSearchBar,
+    ChuccTableItem
+  },
+  data() {
+    return {
+      tags: ['178-772', '129-037']
+    }
   },
   methods: {
     processClickOnNew: function() {

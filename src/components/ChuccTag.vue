@@ -26,9 +26,9 @@ span {
   border: none;
   border-radius: 5px;
   color: #9d8189;
-  padding: 5px 10px;
+  padding: 2px 5px;
+  margin-left: 5px;
   display: inline-block;
   font-size: 12px;
-  outline: none;
 }
 </style>
