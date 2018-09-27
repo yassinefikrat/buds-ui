@@ -41,6 +41,7 @@ input {
   border-bottom: 2px solid #9d8189;
   outline: none;
   color: #9d8189;
+  background-color: #FFE5D9;
 }
 
 .searchButton {
