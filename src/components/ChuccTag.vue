@@ -31,4 +31,8 @@ span {
   display: inline-block;
   font-size: 12px;
 }
+
+span:hover {
+  background-color: #f4acb7;
+}
 </style>
