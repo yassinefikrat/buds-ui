@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ChuccTag from "./ChuccTag";
+import ChuccTag from "./ChuccTag.vue";
 export default {
   name: "ChuccTableItem",
   components: {

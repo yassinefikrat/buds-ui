@@ -29,11 +29,11 @@ npm test
 ```sh
 bit init
 bit login
-bit add src/components/_ -t 'test/unit/specs/_'
+bit add src/components/*
 bit status
 bit import bit.envs/bundlers/vue --compiler
 bit import bit.envs/testers/jest --tester
-bit tag --all 1.0.0
+bit tag --all 2.1.0
 bit export yassinefikrat.buds-ui
 ```
 
